@@ -1,0 +1,63 @@
+@importar  url ( 'https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter: wght@100;200;300;400;500;600;700;800;900&display=swap' );
+
+: raiz {
+    --cor-fundo :  # 01080E ;
+    --cor-principal :  # 0B0D20 ;
+    --cor-secundária :  # 212333 ;
+    --cor-destaque :  # 2BDEFD ;
+    --cor-texto :  # D7F9FF ;
+}
+
+corpo {
+    cor de fundo :  var ( -cor-fundo );
+    cor :  var ( --cor-texto );
+    família de fontes :  'Inter' , sem serifa;
+    exibição : flexível;
+    justificar-conteúdo : centro;
+    alinhar itens : centro;
+    altura mínima :  100 vh ;
+}
+
+. caixa-principal {
+    cor de fundo :  var ( -cor-principal );
+    largura :  90 % ;
+    largura máxima :  600 px ;
+    alinhamento de texto : centro;
+    preenchimento :  20 px ;
+}
+
+h1 , . caixa-perguntas , . caixa-resultado {
+    família de fontes :  'Chakra Petch' , sem serifa;
+}
+
+h1 {
+    cor :  var ( -cor-destaque );
+}
+
+botão {
+    cor de fundo :  var ( --cor-secundaria );
+    cor :  var ( --cor-texto );
+    fronteira : nenhuma;
+    raio da borda :  15 px ;
+    preenchimento :  15 px ;
+    transição : cor de fundo 0,3 s ;
+}
+
+botão : passar o mouse {
+    cor de fundo :  var ( --cor-destaque );
+    cor :  var ( --cor-principal );
+}
+
+. caixa-resultado {
+    Mostrar nenhum ;
+}
+
+. caixa-resultado . mostrar {
+    exibição : bloco;
+}
+
+. caixa-alternativas {
+    exibição : flexível;
+    direção flexível : coluna;
+    lacuna :  10 px ;
+}
